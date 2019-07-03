@@ -1,0 +1,86 @@
+body {
+	overflow-y: scroll;
+}
+
+body, input, textarea {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+#controls {
+    float: right;
+    margin-left: 100px;
+    padding-right: 20px;
+}
+
+#map {
+    overflow: hidden;
+    height: 800px;
+    direction: ltr;
+}
+
+#optionsPanel, #dragPanel, #editPanel  {
+    display: none;
+    background-color: #faed96;
+    padding: 15px;
+
+    h3 {
+        margin-top: 0px;
+    }
+}
+
+h2 {
+    color: darkblue;
+}
+
+.jsonDesignField, .wktField {
+    direction: ltr;
+}
+
+#layersPanel {
+	.layer[data-name=map] {
+		margin-right: 20px;
+	}
+
+	.layer {
+		display: flex;
+		padding: 3px;
+		vertical-align: middle;
+		align-items: center;
+
+		.title {
+			border-radius: 5px;
+			padding: 3px;
+			margin-right: 3px;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+
+		.title:hover {
+			background-color: #eee;
+		}
+	}
+
+	.layer.selected {
+		.title {
+			background-color: #ccc;
+		}
+	}
+
+	.addRandomShapesBtn {
+		margin-top: 5px;
+	}
+}
+
+#errorOutput {
+    color: red;
+}
+
+#selectGeoZone{
+    width: 45px;
+}
+
+#selectGeoDirectionFrom, #selectGeoZone,
+#selectGeoDirectionTo{
+    visibility: hidden;
+}

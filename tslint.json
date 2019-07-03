@@ -1,0 +1,48 @@
+{
+    "rules": {
+        "class-name": true,
+        "curly": true,
+        "eofline": false,
+        "forin": true,
+        "indent": [true, "tabs"],
+        "label-position": true,
+        "no-arg": true,
+        "no-bitwise": false,
+        "no-console": [true,
+            "debug",
+            "info",
+            "time",
+            "timeEnd",
+            "trace"
+        ],
+        "no-construct": true,
+        "no-debugger": true,
+        "no-duplicate-imports": true,
+        "no-duplicate-variable": true,
+        "no-empty": false,
+        "no-eval": true,
+        "one-line": [true,
+            "check-open-brace",
+            "check-catch",
+            "check-whitespace"
+        ],
+        "quotemark": [true, "double"],
+        "radix": true,
+        "semicolon": true,
+        "triple-equals": [true, "allow-null-check"],
+        "variable-name": false,
+        "whitespace": [true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type",
+            "check-module"
+        ],
+        "no-trailing-whitespace": true,
+        "no-boolean-literal-compare": true,
+        "no-duplicate-super": true,
+        "no-implicit-dependencies": true,
+        "import-spacing": true
+    }
+}

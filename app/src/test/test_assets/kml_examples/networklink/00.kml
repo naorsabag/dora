@@ -1,0 +1,44 @@
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document
+            id="LINK">
+        <LookAt>
+            <longitude>34.3844076980743</longitude>
+            <latitude>31.4281883892359</latitude>
+            <range>44141.0940275122</range>
+            <altitudeMode>relativeToGround</altitudeMode>
+        </LookAt>
+        <Style id="eab3bdf19cf94126a41bc3555c319cd1">
+            <IconStyle>
+                <color>ff5792ff</color>
+                <scale>0.9</scale>
+                <Icon>
+                    <href>test_assets/placemark.png</href>
+                </Icon>
+            </IconStyle>
+            <LabelStyle>
+                <color>ffffffff</color>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff5792ff</color>
+                <width>4</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>299c35b3</color>
+            </PolyStyle>
+        </Style>
+        <StyleMap id="dcb0b5dc6b2e43649ade56cc44135bfa">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#eab3bdf19cf94126a41bc3555c319cd1</styleUrl>
+            </Pair>
+        </StyleMap>
+        <Folder>
+            <Placemark id="node00">
+                <name/>
+                <styleUrl>#dcb0b5dc6b2e43649ade56cc44135bfa</styleUrl>
+                <Point>
+                    <coordinates>34.3,31.56</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+    </Document></kml>

@@ -1,0 +1,288 @@
+﻿#map {
+	position: relative;
+}
+
+.leaflet-control-layers-overlays {
+  direction: rtl;
+}
+
+.leaflet-tooltip.map-manger-leaflet-label {
+     background-color: inherit;
+     border: none;
+     box-shadow: none;
+     color: white;
+     font-size: 15px;
+     &:before {
+       border: 0
+     }
+}
+
+.leaflet-control-layers-base {
+  direction: rtl;
+}
+
+.leaflet-popup-content {
+  max-height: 500px;
+  max-width: 500px;
+  overflow-y: auto;
+  padding: 10px;
+  width: auto !important;
+}
+
+.leaflet-popup-content::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.leaflet-popup-content::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.leaflet-popup-content::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.leaflet-draw-tooltip-single {
+  display: none !important;
+}
+
+.google-maps-point-label {
+  color: #222;
+  font-size: 12px;
+  background-color: white;
+  padding: 6px;
+  opacity: 0.9;
+  border: 1px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.google-maps-point-label-hide {
+  display: none;
+}
+
+.gmnoprint {
+  opacity: 1 !important;
+}
+
+.marker-highlight-animated-icon {
+    z-index: -999 !important;
+    position: absolute;
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: -100px !important;
+    margin-left: -99px !important;
+    transform: translate3d(960px,522px,0px);
+    background: transparent !important;
+    border: transparent !important;
+}
+
+.overlay-highlight {
+    stroke: rgba(50,35,200,1) !important;
+    stroke-width: 20px;
+    fill: rgba(50,35,200,1) !important;
+    -webkit-filter: brightness(3);
+}
+
+.markerHighlighGlow {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: -webkit-radial-gradient(rgba(66, 186, 255, 1), rgba(255, 223, 67, 0) 70%) !important;
+    -webkit-animation: highlight1 0.75s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.markerHighlighFlare {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: rgba(66, 186, 255, 1) !important;
+    -webkit-animation: highlight 0.75s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@-webkit-keyframes highlight1 {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0.4;
+    }
+}
+
+@-webkit-keyframes highlight {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0.8;
+    }
+}
+
+.highlight-arrow {
+    position: fixed;
+    bottom: 130px;
+    left: 42%;
+    margin-left: -20px;
+    width: 70px;
+    height: 70px;
+    background-image: url("../../assets/Navigation-Down.png");
+    background-size: contain;
+}
+
+.highlight-arrow-bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+.XXX-base-layers-control {
+	width: 36px;
+	height: 36px;
+	background: #fff;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAJiS0dE//8UqzHNAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA3LTE4VDE1OjQ3OjUwKzAzOjAwKVsl3AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wNy0xOFQxNTo0Nzo1MCswMzowMFgGnWAAAAA0dEVYdHN2ZzpiYXNlLXVyaQBmaWxlOi8vL2hvbWUvVDMwNjAwNzkzL2ljb25zL215L21hcC5zdmfkF/d/AAABz0lEQVRIS+2WuYoCURBFr/uCO+6CiKJGghgYqJn/KvgRfoAGghqogRqouO+BOzNTZQs242CPMDKBB4qm33bfe9XUbdnHF3gBcuH557xMSHR19Xodo9EI0+kUq9UK+/0ex+ORQ6VScXi9XjgcDrjdbjidTvR6PfT7fUwmE2w2G56z3W6RTqc5roiE8vk81us1TzgcDkLrBZ/Ph8VigdPpBKPRCKvVCrPZzG3z+ZznnM9nYTSQyWQ4roiurtPpYDabfRMhYrEYIpEIi1A/naRSqaDdbmO5XIpE7iE5R9FoFKlUCtlsFslkEqFQCCaTSeh9jGQhnU7HC/v9foTDYT4hCUrl11+dUqmExWJBIBBAPB4XWh/zss/7LfQ0b6Gn+X9CjUYDw+FQePs9koXK5TLbyHg85kq92+0eFtJbJAsNBgPUajUUCgUUi0W0Wi2u2veQyWSQy8VL/yikUCjYc4LBIBKJBBdTrVaLbreLZrOJarWKUqkkjL5AxkhzqAaSQd4iMr5cLgePx8Nhs9m4YqvVal7g6rTkV+SmdELKmcvlYre12+1c3TUaDfR6PW/0FpEQJZwqMzknidyD8kI5omsju6exFAaDgTf0E+/frScBPgH6rNMi9BhyMQAAAABJRU5ErkJggg==");
+    background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer !important;
+	z-index: 1000 !important;
+	direction: ltr;
+}
+
+.ge-XXX-base-layers-control-bg {
+	width: 36px;
+	height: 36px;
+	border: 0px;
+}
+
+.ge-XXX-base-layers-control, .ge-XXX-base-layers-control-bg {
+	position: absolute;
+	top: 330px;
+	left: 30px;
+}
+
+.leaflet-XXX-base-layers-control {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+
+.XXX-base-layers-popup, .XXX-base-layers-popup-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 265px;
+	height: 265px;
+	display: none;
+	box-sizing: border-box;
+}
+
+.XXX-base-layers-popup {
+	position: relative;
+	z-index: 2;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	padding: 10px;
+	padding-top: 30px;
+    cursor: default !important;
+	-webkit-user-select: none;
+
+	.close-btn {
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		width: 12px;
+		height: 12px;
+		cursor: pointer;
+	}
+
+	.jstree {
+		height: 220px;
+		overflow-y: auto;
+
+		.ge-XXX-layer {
+			color: #30740a;
+		}
+
+		.ge-YYY-layer {
+			color: #bb7f0a;
+		}
+
+		.ge-crf-layer {
+			color: #1246a5;
+		}
+
+		.ge-combined-folder {
+			color: #000000;
+		}
+
+		.layer-icon {
+			display: none;
+		}
+	}
+}
+
+.XXX-base-layers-popup-bg {
+	border: 0px;
+}
